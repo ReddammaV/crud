@@ -1,0 +1,46 @@
+{
+  "fakeUsers": [
+    {
+      "id": 6,
+      "email": "arunakumari@gmail.com",
+      "firstName": "Aruna",
+      "lastName": "Velasiri"
+    },
+    {
+      "id": 13,
+      "email": "css2",
+      "firstName": "css2",
+      "lastName": "css2"
+    },
+    {
+      "id": 14,
+      "email": "harypotter@gmail.com",
+      "firstName": "Harry",
+      "lastName": "Mohan"
+    },
+    {
+      "email": "velasirireddamma@gmail.com",
+      "firstName": "Reddamma",
+      "lastName": "Velasiri",
+      "id": 15
+    },
+    {
+      "id": 16,
+      "email": "velasirireddamma@gmail.com",
+      "firstName": "Harry",
+      "lastName": "Poter"
+    },
+    {
+      "id": 17,
+      "email": "velasirireddamma@gmail.com",
+      "firstName": "Reddy",
+      "lastName": "Velasiri"
+    },
+    {
+      "email": "css",
+      "firstName": "css",
+      "lastName": "css",
+      "id": 18
+    }
+  ]
+}

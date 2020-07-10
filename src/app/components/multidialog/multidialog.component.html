@@ -1,0 +1,42 @@
+<div class="container">
+    <h2> Products</h2>
+    <button class="btn btn-primary mb-4 float-right" (click)="openMultiDialog()"> Add Product</button>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th class="hidden">Id</th>
+          <th>FirstName</th>
+          <th>LastName</th>
+          <th>Email</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let product of products; let i=index">
+          <td>{{i+1}}</td>
+          <td>{{product.firstName}}</td>
+          <td>{{product.lastName}}</td>
+          <td>{{product.email}}</td>
+          <td>
+            <button class="btn btn-success" [routerLink]="['dialog-view',product.id]"> View</button>
+            <button class="btn btn-warning" (click)="editProduct(product)" style="margin-left: 20px;"> Edit</button>
+            <button class="btn btn-danger" (click)="deleteProduct(product)" style="margin-left: 20px;"> Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  
+<!-- modal start -->
+<!-- <ng-template #template>
+    <div class="modal-header">
+        <h4 class="modal-title pull-left">Add Product</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <app-dialog></app-dialog>
+    </div>
+</ng-template> -->
