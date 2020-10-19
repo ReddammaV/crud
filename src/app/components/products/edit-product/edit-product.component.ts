@@ -3,8 +3,8 @@ import { Router, ActivatedRoute } from "@angular/router";
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 import { first } from "rxjs/operators";
 import { Location } from '@angular/common';
-import { Product } from 'src/app/core/model/product';
-import { ApiService } from 'src/app/core/services/api.service';
+import { Product } from '../../../core/model/product';
+import { ApiService } from '../../../core/services/api.service';
 
 @Component({
   selector: 'app-edit-product',
@@ -74,7 +74,7 @@ export class EditProductComponent implements OnInit {
       () => {
         console.log("edited");
         this.employeeIdToUpdate = null;
-        this.router.navigate(['myproducts']);
+        this.router.navigate(['products']);
         this.editForm.reset();
       }
     )

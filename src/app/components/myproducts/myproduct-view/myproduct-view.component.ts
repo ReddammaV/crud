@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params, Router } from '@angular/router';
 import { Location } from '@angular/common';
-import { ApiService } from 'src/app/core/services/api.service';
+import { ApiService } from '../../../core/services/api.service';
 
 @Component({
   selector: 'app-myproduct-view',

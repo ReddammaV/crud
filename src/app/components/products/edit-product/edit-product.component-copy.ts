@@ -3,8 +3,8 @@ import {Router} from "@angular/router";
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import {first} from "rxjs/operators";
 import { Location } from '@angular/common';
-import { Product } from 'src/app/core/model/product';
-import { ApiService } from 'src/app/core/services/api.service';
+import { Product } from '../../../core/model/product';
+import { ApiService } from '../../../core/services/api.service';
 
 @Component({
   selector: 'app-edit-product',
@@ -13,7 +13,7 @@ import { ApiService } from 'src/app/core/services/api.service';
 })
 export class EditProductComponent implements OnInit {
 
-  
+
   product: Product;
   editForm: FormGroup;
   constructor(private _location: Location, private formBuilder: FormBuilder,private router: Router, private apiService: ApiService) { }

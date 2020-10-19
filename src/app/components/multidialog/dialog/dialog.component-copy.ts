@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators, FormControl} from '@angular/forms';
 import { Router, ActivatedRoute } from "@angular/router";
-import { ApiService } from 'src/app/core/services/api.service';
-import { Product } from 'src/app/core/model/product';
+import { ApiService } from '../../../core/services/api.service';
+import { Product } from '../../../core/model/product';
 import { first } from "rxjs/operators";
 import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
 
@@ -19,16 +19,16 @@ export class DialogComponent implements OnInit {
   id: number;
   myProduct: any;
   modalRef: BsModalRef;
-  // from modaldialog 
+  // from modaldialog
   productid: any;
   productfirstname: any;
   productlastname: any;
   productemail: any;
-  
 
-  constructor(private formBuilder: FormBuilder, 
-    private route: ActivatedRoute, 
-    private router: Router, 
+
+  constructor(private formBuilder: FormBuilder,
+    private route: ActivatedRoute,
+    private router: Router,
     private apiService: ApiService,
     private modalService: BsModalService,
     private bsModalRef: BsModalRef) { }

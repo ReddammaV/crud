@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 import { Router } from "@angular/router";
-import { ApiService } from 'src/app/core/services/api.service';
-import { Product } from 'src/app/core/model/product';
+import { ApiService } from '../../../core/services/api.service';
+import { Product } from '../../../core/model/product';
 import { first } from 'rxjs/internal/operators/first';
 
 @Component({
@@ -29,7 +29,7 @@ export class MyproductComponent implements OnInit {
 
     // getById
     this.getById();
-    
+
   }
 
   // getById
@@ -55,8 +55,8 @@ export class MyproductComponent implements OnInit {
   }
 
   onSubmit() {
-    if(this.productId == 0){    
-      console.log("add");  
+    if(this.productId == 0){
+      console.log("add");
       this.apiService.createProduct(this.addForm.value)
       .subscribe(data => {
         this.addForm.reset();
@@ -80,6 +80,6 @@ export class MyproductComponent implements OnInit {
     }
   }
 
-  
+
 
 }

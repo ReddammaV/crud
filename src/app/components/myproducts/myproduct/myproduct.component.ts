@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 import { Router, ActivatedRoute } from "@angular/router";
-import { ApiService } from 'src/app/core/services/api.service';
-import { Product } from 'src/app/core/model/product';
+import { ApiService } from '../../../core/services/api.service';
+import { Product } from '../../../core/model/product';
 import { first } from 'rxjs/internal/operators/first';
 
 @Component({

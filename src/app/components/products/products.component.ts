@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Product } from 'src/app/core/model/product';
-import { ApiService } from 'src/app/core/services/api.service';
+import { Product } from '../../core/model/product';
+import { ApiService } from '../../core/services/api.service';
 import { Router } from '@angular/router';
 
 @Component({
@@ -38,7 +38,7 @@ export class ProductsComponent implements OnInit {
   editProduct(product: Product): void {
     localStorage.removeItem("editProductId");
     localStorage.setItem("editProductId", product.id.toString());
-    // this.router.navigate(["/edit-product"]);    
+    // this.router.navigate(["/edit-product"]);
   };
 
 

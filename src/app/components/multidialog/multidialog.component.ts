@@ -1,6 +1,6 @@
 import { Component, OnInit, TemplateRef } from '@angular/core';
-import { Product } from 'src/app/core/model/product';
-import { ApiService } from 'src/app/core/services/api.service';
+import { Product } from '../../core/model/product';
+import { ApiService } from '../../core/services/api.service';
 import { Router } from '@angular/router';
 import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
 import { DialogComponent } from './dialog/dialog.component';
