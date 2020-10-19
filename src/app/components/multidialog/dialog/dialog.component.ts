@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 import { Router, ActivatedRoute } from "@angular/router";
 // import { ApiService } from '../../core/services/api.service';
-import { ApiService } from '../../core/services/api.service';
-import { Product } from '../../core/model/product';
+import { ApiService } from '../../../core/services/api.service';
+import { Product } from '../../../core/model/product';
 import { first } from "rxjs/operators";
 import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
 
